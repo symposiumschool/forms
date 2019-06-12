@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="forms4.css">
+  <title>Styled Holiday Form</title>
+</head>
+<body>
+  <form>
+    <!-- *************** Details *************** -->
+    <fieldset>
+      <legend><span>1</span> Your Details</legend>
+      <!-- name -->
+      <label for="name">
+        <input id="name" type="text" placeholder="Name" required autofocus>
+      </label>
+      <!-- email -->
+      <label for="email">
+        <input id="email" type="email" placeholder="Email" required>
+      </label>
+    </fieldset>
+    <!-- ************ Destination & Departure ************ -->
+    <fieldset>
+      <legend><span>2</span> Destination & Departure</legend>
+      <!-- date -->
+      <label for="departure">Departure:</label>
+      <input id="departure" type="date">
+      <label for="return">Return:</label>
+      <input id="return" type="date">
+      <!-- select -->
+      <label for="leaving">Leaving From:</label>
+      <select id="leaving" name="leaving">
+        <option value="London" selected>London</option>
+        <option value="Belfast">Belfast</option>
+        <option value="Edinburgh">Edinburgh</option>
+        <option value="Cardiff">Cardiff</option>
+      </select>
+      <label for="destination">Going To:</label>
+      <select id="destination" name="destination">
+        <option value="London" selected>London</option>
+        <option value="Belfast">Belfast</option>
+        <option value="Edinburgh">Edinburgh</option>
+        <option value="Cardiff">Cardiff</option>
+      </select>
+    </fieldset>
+<!-- **************** Feedback **************** -->
+    <fieldset>
+      <legend><span>3</span> Feedback</legend>
+      <!-- select -->
+      <label for="source">How did you hear about us?</label>
+      <select id="source" name="source">
+        <option value="Google">Google</option>
+        <option value="TV">TV</option>
+        <option value="Newspaper">Newspaper</option>
+        <option value="Other">Other</option>
+      </select>
+      <!-- radio -->
+        <p>Would you use our service again?</p>
+        <label for="radio-yes">Yes:</label>
+        <input id="radio-yes" type="radio" name="choose">
+        <label for="radio-no">No:</label>
+        <input type="radio" id="radio-no" name="choose">
+        <label for="radio-maybe">Maybe:</label>
+        <input type="radio" id="radio-maybe" name="choose">
+      <!-- textarea -->
+      <br>
+      <label for="feedback">Any comments?</label>
+      <textarea id="feedback" name="feedback" cols="40" rows="3"></textarea>
+      <br>
+      <!-- checkbox -->
+      <label for="checkbox">Join mailing list?</label>
+      <input id="checkbox" type="checkbox">
+    </fieldset>
+    <!-- submit -->
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
